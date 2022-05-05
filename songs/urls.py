@@ -1,7 +1,7 @@
 from django.urls import path
-from . import veiws
+from . import views
 
-urlpatterns = {
-    path('', veiws.songs_list),
-    path('<int:pk>/', veiws.songs_detail)
-}
+urlpatterns = [
+    path('', views.songs_list),
+    # path('<int:pk>/', views.songs_detail)
+]
